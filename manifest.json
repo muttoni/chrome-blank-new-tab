@@ -1,0 +1,20 @@
+{
+  "name": "Custom Redirect",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension allows you to change the redirect URL",
+  "homepage_url": "http://www.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/override/override.html"
+  }
+}
